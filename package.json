@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/alterx/shouldiuse-be#readme",
   "dependencies": {
-    "stackexchange": "^0.3.0"
+    "body-parser": "^1.15.0",
+    "cheerio": "^0.20.0",
+    "express": "^4.13.4",
+    "github": "^0.2.4"
   }
 }
