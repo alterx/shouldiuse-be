@@ -17,4 +17,19 @@ router.route('/repositories').get(function(req, res) {
     });
 });
 
+router.route('/repository').get(function(req, res) {
+    
+    var authenticatedGHInstance = github.authenticate();
+    
+    authenticatedGHInstance.repos.get({
+        user: req.query.ownerId,
+        repo: req.query.repoId
+    }, function(err, repo) {
+        if (err) {
+            return res.send(err);
+        }
+        res.json(repo);
+    });
+});
+
 module.exports = router;
