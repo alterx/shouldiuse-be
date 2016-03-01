@@ -3,6 +3,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var repositories = require('./routes/repositories');
 var stackoverflow = require('./routes/stackoverflow');
+var typeform = require('./routes/typeform');
 var app = express();
 
 
@@ -17,6 +18,7 @@ app.use(function(req, res, next) {
 
 app.use('/api', repositories); //This is our route middleware
 app.use('/api', stackoverflow);
+app.use('/api', typeform);
 
 app.set('port', process.env.PORT || 8000);
 
