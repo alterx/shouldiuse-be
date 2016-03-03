@@ -2,7 +2,7 @@
   "name": "shouldiuse-be",
   "version": "0.0.1",
   "description": "Should I use backend",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
